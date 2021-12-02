@@ -31,13 +31,13 @@ int main()
 {
     int cases;
     cin>>cases;
-    for (int caseno = 1; caseno <= cases; ++caseno)
+    for (int i = 0; i < cases; i++)
     {
         int a;
         cin>>a;
 
         vector<int> ans = problemsStored(a);
-        cout<<ans[0]<<ans[1]<<endl;
+        cout<<ans[0]<<" "<<ans[1]<<endl;
     }
     return 0;
 }
