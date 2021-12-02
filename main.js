@@ -25,12 +25,15 @@ function readline() {
 function main() {
     const cases = readline();
     for (let i = 0; i < cases; i++) {
-        const numbers = readline().split(" ").map(Number);
-        let sum = 0;
-        for (let j = 0; j < numbers.length; j++) {
-            sum += numbers[j];
-
+        const number = parseInt(readline());
+        if (number > 0) {
+            if (number > 10) {
+                console.log(number - 10, 10)
+            } else {
+                console.log(0, number)
+            }
+        } else {
+            console.log(0, 0);
         }
-        console.log(`Case ${i+1}: ${sum}`);
     }
 }
